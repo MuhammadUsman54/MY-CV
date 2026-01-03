@@ -1,0 +1,33 @@
+ @media print {
+            @page {
+                size: A4;
+                margin: 0.5in;
+            }
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .no-print {
+                display: none !important;
+            }
+            .break-inside-avoid {
+                break-inside: avoid;
+            }
+            .print-padding {
+                padding: 0.5in;
+            }
+        }
+        /* Custom font for better print appearance */
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        }
+        .section-heading {
+            border-bottom: 2px solid #3b82f6;
+        }
+        .icon {
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
